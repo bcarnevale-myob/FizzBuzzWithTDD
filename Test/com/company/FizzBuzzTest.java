@@ -47,4 +47,32 @@ public class FizzBuzzTest {
         // Assert
         assertEquals(expectedValue, actualValue);
     }
+
+    @Test
+    public void inputFive_ReturnsBuzz() {
+        // Arrange
+        int input = 5;
+        String expectedValue = "Buzz";
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        // Act
+        String actualValue = fizzBuzz.calculateFizzBuzz(input);
+
+        // Assert
+        assertEquals(expectedValue, actualValue);
+    }
+
+    @Test
+    public void inputFifteen_ReturnsFizzBuzz() {
+        // Arrange
+        int input = 15;
+        String expectedValue = "FizzBuzz";
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        // Act
+        String actualValue = fizzBuzz.calculateFizzBuzz(input);
+
+        // Assert
+        assertEquals(expectedValue, actualValue);
+    }
 }
