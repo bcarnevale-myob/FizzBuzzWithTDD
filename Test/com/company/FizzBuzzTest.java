@@ -75,4 +75,19 @@ public class FizzBuzzTest {
         // Assert
         assertEquals(expectedValue, actualValue);
     }
+
+    @Test
+    public void inputNine_ReturnsFizz() {
+        // Arrange
+        int input = 9;
+        String expectedValue = "Fizz";
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        // Act
+        String actualValue = fizzBuzz.calculateFizzBuzz(input);
+
+        // Assert
+        assertEquals(expectedValue, actualValue);
+
+    }
 }
