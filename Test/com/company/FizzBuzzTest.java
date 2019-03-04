@@ -90,4 +90,34 @@ public class FizzBuzzTest {
         assertEquals(expectedValue, actualValue);
 
     }
+
+    @Test
+    public void inputTen_ReturnsBuzz() {
+        // Arrange
+        int input = 10;
+        String expectedValue = "Buzz";
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        // Act
+        String actualValue = fizzBuzz.calculateFizzBuzz(input);
+
+        // Assert
+        assertEquals(expectedValue, actualValue);
+
+    }
+
+    @Test
+    public void inputThirty_ReturnsFizzBuzz() {
+        // Arrange
+        int input = 30;
+        String expectedValue = "FizzBuzz";
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        // Act
+        String actualValue = fizzBuzz.calculateFizzBuzz(input);
+
+        // Assert
+        assertEquals(expectedValue, actualValue);
+    }
+
 }
